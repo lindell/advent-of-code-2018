@@ -1,0 +1,17 @@
+{
+  "name": "aoc2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan Lindell",
+  "license": "ISC",
+  "dependencies": {
+    "aoc-loader": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
