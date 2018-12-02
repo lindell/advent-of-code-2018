@@ -2,7 +2,6 @@ const aocLoader = require('aoc-loader');
 
 function solver(data) {
 	const lines = data.split('\n').map(l => l.split(''));
-	
 	for (let i = 0; i < lines.length; i++) {
 		for (let j = i + 1; j < lines.length; j++) {
 			if (diffLines(lines[i], lines[j]) === 1) {
@@ -10,6 +9,7 @@ function solver(data) {
 			}
 		}
 	}
+	return undefined;
 }
 
 function shared(l1, l2) {
@@ -33,5 +33,5 @@ function diffLines(l1, l2) {
 }
 
 aocLoader(2018, 2).then(solver)
-	.then((ans) => console.log(`Answer is: ${ans}`))
+	.then(ans => console.log(`Answer is: ${ans}`))
 	.catch(console.log);

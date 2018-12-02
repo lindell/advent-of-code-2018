@@ -22,5 +22,5 @@ function solver(data) {
 }
 
 aocLoader(2018, 2).then(solver)
-	.then((ans) => console.log(`Answer is: ${ans}`))
+	.then(ans => console.log(`Answer is: ${ans}`))
 	.catch(console.log);

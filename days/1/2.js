@@ -4,7 +4,7 @@ function solver(data) {
 	const numbers = data.split('\n').map(n => parseInt(n, 10));
 	let current = 0;
 	const seen = { 0: true };
-	for(;;) {
+	for (;;) {
 		for (const n of numbers) {
 			current += n;
 			if (seen[current]) {
@@ -16,5 +16,5 @@ function solver(data) {
 }
 
 aocLoader(2018, 1).then(solver)
-	.then((ans) => console.log(`Answer is: ${ans}`))
+	.then(ans => console.log(`Answer is: ${ans}`))
 	.catch(console.log);

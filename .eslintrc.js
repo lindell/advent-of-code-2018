@@ -1,5 +1,5 @@
 module.exports = {
-	"extends": "eslint:recommended",
+	"extends": "airbnb-base",
 	"parserOptions": {
 		"ecmaVersion": 8,
 	},
@@ -10,6 +10,8 @@ module.exports = {
 		"indent": ["error", "tab"],
 		"no-tabs": 0,
 		"no-use-before-define": ["error", { "functions": false }],
-		"no-console": 0
+		"no-console": 0,
+		"no-restricted-syntax": 0,
+		"no-plusplus": 0
 	}
 };
